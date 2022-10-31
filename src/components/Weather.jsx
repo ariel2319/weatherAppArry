@@ -35,8 +35,8 @@ const Weather = () => {
         <h2 className='city'>{weather.name}, {weather.sys?.country}</h2>
         <div>
           <h1 className='temperature'>
-            {isCelcius ? `${weather.main?.temp.toFixed(1)}°`  :`${weather.main?.temp.toFixed(0) * 1.8 + 32}°`}
-            {isCelcius ? <span>C</span> : <span>F</span> }
+            {isCelcius ? `${weather.main?.temp.toFixed(1)}`  :`${weather.main?.temp.toFixed(0) * 1.8 + 32}`}
+            {isCelcius ? <span>°C</span> : <span>°F</span> }
           </h1>
           <h3>{weather.weather?.[0].description}</h3>
           <img src={`http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt="" />
