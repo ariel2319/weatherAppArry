@@ -1,9 +1,7 @@
-import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 import Weather from './components/Weather'
-import axios from 'axios'
 import Author from './components/Author'
+import './styles.css'
 
 function App() {
   

@@ -1,28 +1,3 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 body {
   margin: 0;
@@ -53,6 +28,7 @@ button {
   animation: changeBor 5s infinite alternate linear;
 }
 button:hover {
+  border-radius: 15px;
   transform: scale(1.05);
 }
 button:focus,
@@ -64,13 +40,13 @@ button:focus-visible {
     border: 0.5px solid black;
   }
   25% {
-    border: 1px solid rgb(74, 131, 253);
+    border: 0.5px solid rgb(74, 131, 253);
   }
   50%{
-    border: 1.5px solid rgb(196, 53, 240);
+    border: 0.5px solid rgb(196, 53, 240);
   }
   75%{
-    border: 1px solid rgb(207, 177, 2);
+    border: 0.5px solid rgb(207, 177, 2);
   }
   100%{
     border: 0.5px solid rgb(247, 141, 129);

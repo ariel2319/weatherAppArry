@@ -1,0 +1,169 @@
+:root{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url(https://free4kwallpapers.com/uploads/originals/2019/07/13/ultra-hd-sunset-s-wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  animation: changeT 5s infinite alternate linear;
+}
+@keyframes changeT {
+  0% {
+    color:  rgb(70, 69, 69);
+  }
+  25% {
+    color:  rgb(106, 153, 255);
+  }
+  50%{
+    color:  rgb(209, 94, 245);
+  }
+  75%{
+    color:  rgb(241, 214, 56);
+  }
+  100%{
+    color: rgb(247, 210, 206);
+  } 
+}
+h2{
+  color: white;
+  text-align: left;
+}
+h3{
+  color: white;
+  font-size: 25px;
+}
+button {
+  color: white;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 35px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  animation: changeBor 5s infinite alternate linear;
+}
+button:hover {
+  border-radius: 15px;
+  transform: scale(1.05);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+@keyframes changeBor {
+  0% {
+    border: 0.5px solid black;
+  }
+  25% {
+    border: 0.5px solid rgb(74, 131, 253);
+  }
+  50%{
+    border: 0.5px solid rgb(196, 53, 240);
+  }
+  75%{
+    border: 0.5px solid rgb(207, 177, 2);
+  }
+  100%{
+    border: 0.5px solid rgb(247, 141, 129);
+  } 
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.App {
+  width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 3px 6px 3px rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.12);
+  /* animation: changeBor 5s infinite alternate linear;  */
+}
+@keyframes changeBor {
+  0% {
+    border: 0.5px solid black;
+  }
+  25% {
+    border: 0.5px solid rgb(74, 131, 253);
+  }
+  50%{
+    border: 0.5px solid rgb(196, 53, 240);
+  }
+  75%{
+    border: 0.5px solid rgb(207, 177, 2);
+  }
+  100%{
+    border: 0.5px solid rgb(247, 141, 129);
+  } 
+}
+.title{
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.city{
+  text-align: left;
+  font-size: 30px;
+  margin: 10px;
+}
+.temperature{
+  font-size: 125px;
+  margin: 10px;
+}
+span{
+  font-size: 2.5rem;
+}
+ul{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column; 
+  /* border:  1px solid greenyellow; */
+  text-align: left;
+}
+li{
+  color: rgb(45, 45, 155);
+  font-size: 20px;
+  font-weight: 700;
+}
+li::marker{
+  content: none;
+}
+i{
+  font-size: 20px;
+  animation: changeT 5s infinite alternate linear;
+}
+.foot-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  color: crimson;
+}

@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import '../styles.css'
 /* import City from './City' 
  */
 //datos: país, ciudad, icono que describa el clima, temperatura en grados centígrados.
@@ -30,24 +31,18 @@ const Weather = () => {
   console.log(weather)
   return (
     <div>
-      
-        <h3>Weather App</h3>
+        <h3 className='title'>Weather App</h3>
         <h2 className='city'>{weather.name}, {weather.sys?.country}</h2>
         <div>
           <h1 className='temperature'>
-            {/* { weather.main?.temp.toFixed(1) : ((weather.main?.temp.toFixed(1)* (9/5))+32)  } */}
-            {/* {isCelcius ? weather.main?.temp.toFixed(1) : weather.main?.temp.toFixed()} */}
             {isCelcius ? `${weather.main?.temp.toFixed(1)}°`  :`${weather.main?.temp.toFixed(0) * 1.8 + 32}°`}
             {isCelcius ? <span>C</span> : <span>F</span> }
           </h1>
           <h3>{weather.weather?.[0].description}</h3>
-        </div>
-        <button onClick={()=> setIsCelcius(!isCelcius)}>F° / C°</button>
-      <div className='icono'>
-        <img src={`http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt="" />
-        
+          <img src={`http://openweathermap.org/img/wn/${weather.weather?.[0].icon}@2x.png`} alt="" />
         {/* {weather.weather?.[0].icon.includes('n') ? <h2>Noche</h2> : <h2>Día</h2>} */} 
       </div>
+      <button onClick={()=> setIsCelcius(!isCelcius)}>🔄</button>
       <div>
         <ul>
           <li><i class="fa-solid fa-wind"></i>  Wind Speed: {weather.wind?.speed} m/s</li>
