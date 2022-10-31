@@ -1,4 +1,4 @@
-import './App.css'
+
 import Weather from './components/Weather'
 import Author from './components/Author'
 import './styles.css'
