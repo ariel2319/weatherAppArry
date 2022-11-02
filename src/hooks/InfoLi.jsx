@@ -2,7 +2,7 @@ import React from 'react';
 
 const InfoLi = ({weather}) => {
 
-  return (
+  return ( 
     <div>
       <ul>
           <li><i className="fa-solid fa-wind"></i>  Wind Speed: {weather.wind?.speed} m/s</li>
