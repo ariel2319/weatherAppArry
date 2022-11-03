@@ -28,15 +28,15 @@ const Weather = () => {
       
     navigator.geolocation.getCurrentPosition(success, error, options);
   },[])
-
-  console.log(weather)
+  const Faren = weather.main.temp * 1.8 + 32
+  /* console.log(weather) */
   return (
     <div>
         <h3 className='title'>Weather App</h3>
         <h2 className='city'>{weather.name}, {weather.sys?.country}</h2>
         <div> 
           <h1 className='temperature'>
-            {isCelcius ? `${weather.main?.temp.toFixed(1)}`  :`${weather.main?.temp.toFixed(1) * 1.8 + 32}`} 
+            {isCelcius ? `${weather.main?.temp.toFixed(1)}`:`${Faren.toFixed(1)}`} 
             {/* {isCelcius ? `${weather.main?.temp.toFixed(1)}`  :`${Math.floor(weather.main?.temp) * 1.8 + 32}`} */}
             {isCelcius ? <span>°C</span> : <span>°F</span> }
           </h1>
