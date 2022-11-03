@@ -28,7 +28,7 @@ const Weather = () => {
       
     navigator.geolocation.getCurrentPosition(success, error, options);
   },[])
-  const Faren = weather.main.temp * 1.8 + 32
+  const Faren = weather.main?.temp * 1.8 + 32
   /* console.log(weather) */
   return (
     <div>
