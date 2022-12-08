@@ -45,7 +45,7 @@ const Weather = () => {
           
         {/* {weather.weather?.[0].icon.includes('n') ? <h2>Noche</h2> : <h2>Día</h2>} */} 
       </div>
-      <button onClick={()=> setIsCelcius(!isCelcius)}>🔁</button>
+      <button onClick={()=> setIsCelcius(!isCelcius)}> 🔁 </button>
       <div>
         <InfoLi 
           weather= {weather}

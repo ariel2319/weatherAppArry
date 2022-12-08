@@ -16,9 +16,9 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 320px;
-  background-image: url(https://free4kwallpapers.com/uploads/originals/2019/07/13/ultra-hd-sunset-s-wallpaper.jpg);   
-  background-repeat: no-repeat;
+  background-image: url(https://images.unsplash.com/photo-1528818955841-a7f1425131b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);   
   background-size: cover;
+  background-attachment: fixed;
 }
   
 h1 {
@@ -60,25 +60,23 @@ button {
   color: white;
   border-radius: 4px;
   padding: 5px;
-  font-size: 35px;
+  font-size: 40px;
   /* font-weight: 600; */
   background-color: transparent;
   cursor: pointer;
-  transition: border-color 0.25s;
-  animation: changeBor 5s infinite alternate linear;
+  border: none;
+  /* transition: border-color 0.25s;
+  animation: changeBor 5s infinite alternate linear; */
 }
 button:hover {
   border-radius: 15px;
   transform: scale(1.05);
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 @keyframes changeBor {
-  0% {
-    border: 1px solid black;
-  }
   25% {
     border: 1px solid rgb(74, 131, 253);
   }
@@ -88,12 +86,9 @@ button:focus-visible {
   75%{
     border: 1px solid rgb(207, 177, 2);
   }
-  100%{
-    border: 1px solid rgb(247, 141, 129);
-  } 
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
@@ -104,7 +99,7 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
 
 .App {
   min-width: 380px;
@@ -137,6 +132,9 @@ button:focus-visible {
 .title{
   margin-top: 10px;
   margin-bottom: 25px;
+  font-size: 40px;
+  color: seashell;
+  filter: drop-shadow(4px 4px 4px rgba(255, 0, 0, 0.5));
 }
 .city{
   text-align: left;
